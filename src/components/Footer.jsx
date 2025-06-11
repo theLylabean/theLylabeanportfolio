@@ -4,7 +4,7 @@ const Footer = () => {
 
     return(
         <>
-            Quote!
+            <p className="footer">&copy; 2025 Lyla Lynn (hehe 🤭)</p>
         </>
     )
 }
