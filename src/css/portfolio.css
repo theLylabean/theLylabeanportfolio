@@ -1,0 +1,33 @@
+main > section {
+    display: inline-block;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 3rem;
+}
+
+li {
+    color: black;
+}
+
+ul {
+    padding-left: 5rem;
+}
+
+ol {
+    padding-left: 5rem;
+}
+
+.image {
+    width: 500px;
+    height: 350px;
+    border: 3px solid black;
+}
+
+.imgrow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

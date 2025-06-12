@@ -10,7 +10,7 @@ const Home = () => {
             <main>
                 <img src={ selfie } />
                     <h2><u>Welcome to My Page!</u></h2>
-                        <p class="intro">
+                        <p className="intro">
                             My name is Lyla Lynn and I am a full-stack web developer graduating July 24, 2025! I love to create beautiful and functional websites. I am passionate about technology and I am always looking for new ways to improve my skills. I am excited to share my work with you and I hope you enjoy it!
                         </p>
                     <h3 className="quote">
