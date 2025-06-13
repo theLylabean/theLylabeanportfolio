@@ -38,11 +38,11 @@ const Portfolio = () => {
             </main>
             <main>
                 <section>
-                    <h3><u>Zoo Problem Project</u></h3>
+                    <h3><u>Back-end Development</u></h3>
                     <p>
                         Hello!
                     </p>
-                    <img class="image" src="zoo.png" />
+                    <img className='image' src={ boop } />
                 </section>
             </main>
             <main>
