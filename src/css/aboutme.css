@@ -1,0 +1,133 @@
+.aboutme-container {
+  line-height: 1.6;
+  color: #1b1b1b;
+}
+
+.aboutme-container h2 {
+    font-family: 'Sour Gummy';
+    text-align: center;
+}
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* 🐱 Cat Row Styles */
+.cat-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cat-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cat-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.cat-text {
+  flex: 1;
+  padding: 1rem;
+  min-width: 250px;
+  color: #1b1b1b;
+}
+
+.cat-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.cat-image {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 6px;
+  margin: 0 1rem;
+}
+
+/* 🎮 & 🪓 Side-by-Side Layout */
+.side-by-side {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* force side-by-side */
+  gap: 2rem;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: #1b1b1b;
+}
+
+.side-by-side.reverse {
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+}
+
+.side-by-side > div {
+  flex: 1;
+  min-width: 0; /* prevent weird overflow */
+}
+
+.side-by-side video {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 700px) {
+  .cat-row,
+  .cat-row.reverse,
+  .side-by-side {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cat-image {
+    margin: 1rem auto 0;
+  }
+
+  .cat-text {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .side-by-side > div {
+    text-align: center;
+  }
+}
+
+.me2 {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 6px;
+    object-fit: cover;
+}

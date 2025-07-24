@@ -1,9 +1,8 @@
 main > section {
     display: inline-block;
-    width: 95%;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 3rem;
 }
 
 li {
@@ -19,15 +18,28 @@ ol {
 }
 
 .image {
-    width: 500px;
-    height: 350px;
+    width: 20rem;
+    height: auto;
     border: 3px solid black;
 }
 
 .imgrow {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.portfolio-header h2 {
+    margin: 0;
+    font-family: 'Sour Gummy';
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.project-container h3 {
+    margin: 0;
 }

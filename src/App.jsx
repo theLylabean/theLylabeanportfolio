@@ -4,6 +4,7 @@ import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import Aboutme from './components/Aboutme.jsx'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/portfolio' element={ <Portfolio /> } />
-            {/* <Route path='/aboutme' element={o} /> */}
+            <Route path='/aboutme' element={ <Aboutme /> } />
           </Routes>
         </div>
       <Footer />
