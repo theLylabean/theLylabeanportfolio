@@ -43,3 +43,16 @@ ol {
 .project-container h3 {
     margin: 0;
 }
+
+.portfolio-github-links {
+    text-align: center;
+}
+
+.portfolio-link {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: black;
+    padding: 3px;
+    color: #ffb7f4;
+}
