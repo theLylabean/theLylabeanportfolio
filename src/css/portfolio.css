@@ -54,5 +54,10 @@ ol {
     border-radius: 6px;
     background: black;
     padding: 3px;
-    color: #ffb7f4;
+    color: white;
+    transition: 0.3s;
+}
+
+.portfolio-link:hover {
+    color: pink;
 }
