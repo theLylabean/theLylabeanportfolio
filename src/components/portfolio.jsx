@@ -26,6 +26,7 @@ import realmforge6 from '../appscreenshots/RealmForge6.png';
 import realmforge7 from '../appscreenshots/RealmForge7.png';
 import realmforge8 from '../appscreenshots/RealmForge8.png';
 import realmforge9 from '../appscreenshots/RealmForge9.mov';
+import { Link } from 'react-router-dom';
 
 
 const Portfolio = () => {
@@ -56,6 +57,15 @@ const Portfolio = () => {
                         <li> Tagging users in posts/comments/etc. </li>
                         <li> Searchbar to find content faster. </li>
                     </ol>
+                    <div className='portfolio-github-links'>
+                        <Link className='portfolio-link' to='https://github.com/theLylabean/capstone.BE2.git'>
+                                Backend Repo
+                        </Link>
+                        &nbsp;&nbsp;
+                        <Link className='portfolio-link' to='https://github.com/theLylabean/capstone.FE.git'>
+                                Frontend Repo
+                        </Link>
+                    </div>
                     <div className='imgrow'>
                         <img className='image' src={ lighthaven1 } />
                         <img className='image' src={ lighthaven2 } />
@@ -94,6 +104,11 @@ const Portfolio = () => {
                         <li> Using Javascript to set explicit requirements for password creation along with error messages for each step based on what requirement is missing. </li>
                         <li> How to give an error message if a class was not selected and give a message if there are no spells found for that class. I also included using some method chaining (.charAt(0).toUpperCase and .slice(1)) to make sure the class name is capitalized. </li>
                     </ol>
+                    <div className='portfolio-github-links'>
+                        <Link className='portfolio-link' to='https://github.com/theLylabean/realmforge.git'>
+                                Github Repo
+                        </Link>
+                    </div>
                     <div className='imgrow'>
                         <img className='image' src={ realmforge1 } />
                         <img className='image' src={ realmforge2 } />
@@ -123,6 +138,11 @@ const Portfolio = () => {
                         <li> Highlighting recommended stats, spells, and equiptment for level 1 characters based on class. </li>
                         <li> The ability to export to pdf and print. </li>
                     </ol>
+                    <div className='portfolio-github-links'>
+                        <Link className='portfolio-link' to='https://github.com/theLylabean/Unit4.TaskList.2501.Workshop39.git'>
+                                Github Repo
+                        </Link>
+                    </div>
                     <div className='imgrow'>
                         <img className='image' src={ tasklist1 } />
                         <img className='image' src={ tasklist2 } />
