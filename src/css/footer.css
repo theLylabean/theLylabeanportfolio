@@ -1,8 +1,8 @@
-.footer {
+/* .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* optional for smaller screens */
+    flex-wrap: wrap;
     gap: 20px;
     background-color: #f2f2f2;
     color: #333;
@@ -33,4 +33,73 @@
 
 .social-links a:hover {
     color: pink;
+} */
+
+.footer {
+  background: #fff0f6;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Sour Gummy', sans-serif;
+  color: #1b2b49;
+  border-top: 3px dashed #ff69b4;
+  animation: fadeInUp 1s ease;
+}
+
+.footer p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer p:last-child {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #ff69b4;
+  font-size: 1rem;
+}
+
+/* 🧷 Social Icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  color: #1b2b49;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.3s;
+  font-size: 1.1rem;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  color: #ff69b4;
+}
+
+/* ✨ Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
 }

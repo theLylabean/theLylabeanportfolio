@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>&copy; 2025 Lyla Lynn (hehe 🤭)</p>
+      <p>Tech-savvy, fantasy-fueled, and delightfully unconventional.</p>
       <div className="social-links">
         <a href="mailto:lyladlynn@gmail.com">
             <FaEnvelope style={{ marginRight: '6px' }} />

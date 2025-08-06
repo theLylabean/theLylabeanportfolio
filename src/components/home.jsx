@@ -4,15 +4,20 @@ import '../css/home.css';
 
 const Home = () => {
     const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/portfolio');
+    }
 
     return (
         <>
-            <main>
+            <main className="home">
                 <img src={ selfie } />
-                    <h2><u>Welcome to My Portfolio Home Page!</u></h2>
-                        <p className="intro">
-                            My name is Lyla Lynn and I am a full-stack web developer! I love to create beautiful and functional websites. I am passionate about technology and I am always looking for new ways to improve my skills. I am excited to share my work with you and I hope you enjoy it!
-                        </p>
+                    <section className="hero">
+                        <h1>Lyla Lynn</h1>
+                        <h2>Pixels, passion, and a bit of chaos.</h2>
+                        <p>Full Stack Developer | Creative Rebel | Quirky Human</p>
+                        <a onClick={ handleClick } className="cta">See My Work</a>
+                    </section>
                     <h3 className="quote">
                         "Ask yourself what is really important, and then have the wisdom and courage to build your life around your answer." - Lee Jampolsky
                     </h3>

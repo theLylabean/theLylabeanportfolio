@@ -13,6 +13,7 @@ function App() {
         <Navbar />
         <div>
           <Routes>
+            <Route path='*' element={ <h1>404 Not Found</h1> } />
             <Route path='/' element={ <Home /> } />
             <Route path='/portfolio' element={ <Portfolio /> } />
             <Route path='/aboutme' element={ <Aboutme /> } />

@@ -1,47 +1,159 @@
-main {
-    min-height: 35rem;
+/* 💖 Main Layout */
+.home {
     width: 99%;
     max-width: 100%;
     margin: 2rem auto;
-    padding: 50px 24px 1px;
-    box-shadow: 0 0 12px -2px black;
+    min-height: 35rem;
+    background: linear-gradient(135deg, #ffe7ef, #e7faff);
+    box-shadow: 0 5px 10px #ff69b4aa;
     color: aliceblue;
     font-family: 'Sour Gummy', sans-serif;
     font-size: 20px;
-    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: float-in 1.2s ease;
+    margin-top: 40px;
 }
 
-main > img {
-    width: 200px;
+/* 🖼️ Image Styling */
+.home img {
+    width: 300px;
     float: right;
-    margin: 10px 0 10px 10px;
-    border: 3px solid aliceblue;
-    box-shadow: 0 0 12px -2px black;
-
+    margin: 30px 0 0 30px;
+    padding: 10px;
+    border: 3px solid #a855f7;
+    /* box-shadow: 0 0 12px -2px black; */
+    box-shadow: 0 5px 10px #ff69b4aa;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-main > .quote {
-    min-height:10vh;
-    padding: 0 24px 0;
+.home img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+/* 🦸 Hero Text */
+.hero {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.25em;
+    color: #1b2b49;
+}
+
+.hero h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5em;
+    color: #ff69b4;
+    animation: wave 2.5s infinite;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5em;
+    color: #1b2b49;
+}
+
+/* 🦆 CTA */
+.cta {
+    display: inline-block;
+    background: #ff69b4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, background 0.3s;
+    cursor: pointer;
+}
+
+.cta:hover {
+    transform: scale(1.1) rotate(-1deg);
+    background: #ff85c1;
+}
+
+/* 🦆 Easter Egg Duck */
+.hero::after {
+    content: '🦆';
+    display: block;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    animation: floaty 3s ease-in-out infinite;
+}
+
+/* 📝 Quote Styling */
+.quote {
+    width: 100%;
+    text-align: center;
     font-family: 'Satisfy', cursive;
-    color: aliceblue;
+    color:  #a855f7;
     font-size: 30px;
     font-weight: 100;
     text-shadow: 1px 1px 2px black;
-    text-align: center;
-    margin-top: 7em;
 }
 
-.footer {
-    width: 99%;
-    max-width: 100%;
-    background-image:linear-gradient(to left, #ffb7f4, #000000);
-    box-shadow: 0 0 12px -2px black;
-    margin: 2rem auto;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Sour Gummy';
-    font-size:1em;
-    color: aliceblue;
+/* 🎬 Animations */
+@keyframes float-in {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+}
+
+@keyframes floaty {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .home img {
+        float: none;
+        margin: 0 auto 1.5rem;
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta {
+        padding: 10px 20px;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        margin-top: 3em;
+    }
 }

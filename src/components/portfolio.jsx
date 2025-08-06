@@ -40,7 +40,7 @@ const Portfolio = () => {
                 <section className='project-card'>
                     <h3><u>Project LightHaven</u></h3>
                     <p>
-                        This project is very personal to me. I worked with two other members to develop an app that focuses on community and inclusivity with no tolerance for hatred or harrassment. With the growing tension of the world, we wanted to make a space for everyone who ever felt unheard, unseen, or unloved; a community for anyone, whether you're a developer, artist, dog groomer, or plant enthusiast. Some of the current features include:
+                        This project is very personal to me. I worked with two other members to develop this app. A community-focused platform for LGBTQIA+ users to connect, share life updates, and support each other. Built with React, Express, and PostgreSQL, with custom auth and profile features. Some of the current features include:
                     </p>
                     <ol> 
                         <li> Resource page for community members to add local and national resources. No account needed to view them. </li>
@@ -87,10 +87,10 @@ const Portfolio = () => {
                 <section className='project-card'>
                     <h3>🛡️<u>RealmForge</u></h3>
                     <p>
-                        My most recent front-end dev project has been my D&D Character Builder. Right now, it's a very rudimentary step-by-step guide to build a D&D character. As I update this app, I will be adding more complex functions like:
+                        My most recent front-end dev project is a D&D 5e character builder with fantasy-themed UI, custom backend, and rich integration with race, class, and magic data. As I update this app, I will be adding more complex functions like:
                     </p>
                     <ol> 
-                        <li>Building a backend component for account creation with login, account info page, and a section to show saved Characters. </li>
+                        <li>Building a custom backend that includes account creation with login, account info page, and a section to show saved Characters. (in progress) </li>
                         <li> Pulling equpitment from the API. </li>
                         <li> Highlighting recommended stats, spells, and equiptment for level 1 characters based on class. </li>
                         <li> The ability to export to pdf and print. </li>
