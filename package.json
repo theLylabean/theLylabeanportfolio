@@ -1,5 +1,6 @@
 {
   "name": "thelylabeanportfolio",
+  "homepage": "https://theLylabean.github.io/theLylabeanportfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +13,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
