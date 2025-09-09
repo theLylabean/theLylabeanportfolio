@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import selfie from '../pictures/me.jpeg';
+import selfie2 from '../pictures/me&jasky.jpeg';
 import '../css/home.css';
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     return (
         <>
             <main className="home">
-                <img src={ selfie } />
+                <img src={ selfie2 } />
                     <section className="hero">
                         <h1>Lyla Lynn</h1>
                         <h2>Pixels, passion, and a bit of chaos.</h2>
