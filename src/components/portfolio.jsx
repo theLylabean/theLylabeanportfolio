@@ -122,7 +122,7 @@ const Portfolio = () => {
                     <div className='imgrow'>
                         <img className='image' src={ realmforge7 } />
                         <img className='image' src={ realmforge8 } />
-                        <img className='image' src={ realmforge9 } />
+                        <video className='image' src={ realmforge9 } />
                     </div>
                 </section>
             </main>
