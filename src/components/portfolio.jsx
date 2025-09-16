@@ -26,6 +26,7 @@ import realmforge6 from '../appscreenshots/RealmForge6.png';
 import realmforge7 from '../appscreenshots/RealmForge7.png';
 import realmforge8 from '../appscreenshots/RealmForge8.png';
 import realmforge9 from '../appscreenshots/RealmForge9.mov';
+import axe from '../pictures/axe.mov';
 import { Link } from 'react-router-dom';
 
 
