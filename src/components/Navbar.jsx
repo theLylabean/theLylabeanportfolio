@@ -14,7 +14,7 @@ const Navbar = () => {
                             Home
                         </Link>
                         <Link to='/portfolio'>
-                            Portfolio
+                            Projects
                         </Link>
                         <Link to='/aboutme'>
                             About Me
