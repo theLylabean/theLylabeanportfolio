@@ -123,10 +123,9 @@ const Portfolio = () => {
                     <div className='imgrow'>
                         <img className='image' src={ realmforge7 } />
                         <img className='image' src={ realmforge8 } />
-                        <video className='image' src={ realmforge9 } />
-                        <video className="bullseye" width="169" height="299" controls>
-                            <source src={ axe } type="video/mp4" />
-                            Your browser does not support the video tag.
+                        <video className='image' controls>
+                            <source src={ realmforge9 } type="video/mp4" />
+                            Your browswer does not support the video tag.
                         </video>
                     </div>
                 </section>
